@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section id="header">
+        <a href="#"><img src="RD (1).png" alt="" height="100px" width="300px"></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">home</a></li>
+                <li><a href="library.html">library </a></li>
+                <li><a href="about.html">about </a></li>
+                <li><a href="login/signup.html">login/signup </a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="f1.jpg" width="100%" id="MainImg" alt="">
+        
+        <div class="small-img-group">
+            <div class="small-img-c0l">
+                <img src="f2.jpg" width="100%" class="small-img" alt="">
+            </div>
+            <div class="small-img-c0l">
+                <img src="f3.jpg" width="100%" class="small-img" alt="">
+            </div>
+            <div class="small-img-c0l">
+                <img src="f4.jpg" width="100%" class="small-img" alt="">
+            </div>
+        </div>
+        </div>
+        <div></div>
+
+        <div class="single-pro-details">
+            <h4>Book Information</h4>
+            <span>"The Elements of Style" by William Strunk Jr. and E.B. White: While it's not solely about paragraphs, this classic book on writing covers many aspects of writing style, including how to structure and organize paragraphs effectively.
+
+                "Writing Paragraphs and Essays" by Marilyn Fry: This book focuses specifically on the art of constructing paragraphs and essays, offering practical guidance and examples for writers of all levels.
+                
+                "Crafting Dynamic Dialogue" by The Editors of Writer's Digest: Dialogue is an integral part of many paragraphs, and this book provides valuable insights and techniques for writing compelling dialogue that enhances your paragraphs.
+                
+                "The Art of Styling Sentences" by Ann Longknife and K.D. Sullivan: While primarily focused on sentence structure, this book also delves into how sentences work together to form paragraphs, making it a useful resource for paragraph-level composition.
+                
+                "The Little Red Writing Book" by Brandon Royal: This concise guide covers various aspects of writing, including paragraph construction, with clear explanations and practical exercises to help improve your writing skills.</span>
+              </div>  
+    </section>
+
+    <script>
+        var MainImg = document.getElementById("MainImg");
+        var smallimg = document.getElementsByClassName("small-img");
+
+        smallimg[0].onclick = function(){
+            MainImg.src = smallimg[0].src;
+        }
+        smallimg[1].onclick = function(){
+            MainImg.src = smallimg[1].src;
+        }
+        smallimg[2].onclick = function(){
+            MainImg.src = smallimg[2].src;
+        }
+    </script>
+
+
+    
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
